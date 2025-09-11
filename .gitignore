@@ -1,3 +1,23 @@
-KDE/
+# Ignore kdeplasma user as its my backup, not related to Hyprland
 Code/
 go/
+Trolltech.conf
+baloofilerc
+bluedevilglobalrc
+dolphinrc
+kded5rc
+kded6rc
+kdedefaults/
+kdeglobals
+kglobalshortcutsrc
+konsolerc
+konsolesshconfig
+ksmserverrc
+ktimezonedrc
+kwalletrc
+libaccounts-glib/
+plasmanotifyrc
+plasmarc
+plasmashellrc
+powermanagementprofilesrc
+xsettingsd/
