@@ -40,3 +40,5 @@ pulse/
 session/
 user-dirs.dirs
 user-dirs.locale
+nvim/lua/custom/packer_compiled.lua
+nvim/.cache/
