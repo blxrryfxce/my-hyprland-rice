@@ -1,4 +1,5 @@
 # Ignore kdeplasma user as its my backup, not related to Hyprland
+discord/
 Code/
 go/
 Trolltech.conf
