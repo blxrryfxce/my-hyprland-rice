@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 2;
-    font-family: "JetBrains Nerd Font", "JetBrains Mono", monospace;
+    font-family: "JetBrains Mono Nerd Font";
     font-size: 13px;
     min-height: 0;
 }
@@ -52,7 +52,6 @@ tooltip label {
 
 #battery.charging {
     color: white;
-    background-color: #26A65B;
 }
 
 @keyframes blink {
@@ -62,12 +61,3 @@ tooltip label {
     }
 }
 
-#battery.warning:not(.charging) {
-    background: #f53c3c;
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}

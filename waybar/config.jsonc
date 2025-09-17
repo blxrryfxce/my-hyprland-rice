@@ -3,25 +3,30 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock"],
-  "modules-right": ["network", "pulseaudio", "battery"],
+  "modules-right": ["tray", "network", "pulseaudio", "battery"],
 
   "clock": {
     "format": "{:%H:%M  %d/%m/%Y}"
   },
+  
+  "tray": {
+    "icon-theme": "Adwaita"
+  },
 
   "network": {
-    "format-wifi": " ({signalStrength}%)",
-    "format-ethernet": "󰈁",
-    "format-disconnected": "󱚵"
+    "format-wifi": " {signalStrength}% {essid} ",
+    "format-disconnected": "No internet",
+    "font": "JetBrains Mono Nerd Font 10"
   },
 
   "battery": {
-    "format": "{capacity}%  ",
-    "format-charging": "⚡ {capacity}%"
+    "exec": "~/.config/scripts/waybar/battery",
+    "interval": 5,
+    "format": "{output}"
   },
 
   "pulseaudio": {
-    "format": "  {volume}%",
+    "format": " {volume}% ",
     "format-muted": " "
   }
 }
