@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Automatically find the battery path
+BAT=$(ls /sys/class/power_supply/ | grep -E '^BAT')
+icons=("" "" "" "" "")  # empty → full
+
+while true; do
+    capacity=$(cat /sys/class/power_supply/$BAT/capacity)
+    status=$(cat /sys/class/power_supply/$BAT/status)
+    
+    if [[ "$status" == "Charging" ]]; then
+        # Cycle through icons every second with lightning
+        idx=$(( $(date +%s) % ${#icons[@]} ))
+        icon="${icons[$idx]} "
+    else # The non-charging animation.
+        if ((capacity >= 90)); then
+            icon=""
+        elif ((capacity >= 75)); then
+            icon=""
+        elif ((capacity >= 50)); then
+            icon=""
+        elif ((capacity >= 25)); then
+            icon=""
+        else
+            icon=""
+        fi
+    fi
+
+    echo "$icon $capacity%"
+    
+    sleep 1
+done
+
