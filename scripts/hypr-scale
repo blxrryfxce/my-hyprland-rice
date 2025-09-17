@@ -1,0 +1,15 @@
+# Usage: hypr-scale +0.1   or   hypr-scale -0.1
+
+MONITOR="eDP-1"  # change to your monitor name (check with `hyprctl monitors`)
+STEP="$1"
+
+# Get current scale
+CURRENT=$(hyprctl monitors -j | jq -r ".[] | select(.name==\"$MONITOR\") | .scale")
+
+# Calculate new scale (bc handles float math)
+NEW=$(echo "$CURRENT $STEP" | awk '{printf "%.2f", $1 + $2}')
+
+# Apply new scale
+hyprctl keyword monitor "$MONITOR,preferred,auto,$NEW"
+
+notify-send "Hyprland" "Scale set to $NEW"
