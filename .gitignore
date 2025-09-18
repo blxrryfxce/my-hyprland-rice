@@ -24,8 +24,6 @@ powermanagementprofilesrc
 xsettingsd/
 KDE/
 dconf/
-gtk-3.0/
-gtk-4.0/
 gtkrc
 gtkrc-2.0
 kactivitymanagerd-statsrc
