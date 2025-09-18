@@ -1,8 +1,8 @@
 * {
     border: none;
     border-radius: 2;
-    font-family: "JetBrains Mono Nerd Font";
-    font-size: 13px;
+    font-family: "JetBrains Nerd Font";
+    font-size: 15px;
     min-height: 0;
 }
 
@@ -32,26 +32,25 @@ tooltip label {
     border-bottom: 3px solid white;
 }
 
-#mode, #clock, #battery {
+#mode, #clock, #custom-battery{
     padding: 0 20px;
 }
 
 #mode {
-    background: #000000;
+    background: #ffffff;
     border-bottom: 3px solid white;
 }
 
 #clock {
     background-color:  #000000;
+    border: 2px solid rgba(245, 245, 245, 1);
+    border-radius: 6px;
 }
 
-#battery {
-    background-color: #000000;
-    color: white;
-}
-
-#battery.charging {
-    color: white;
+#custom-battery {
+  color: #ffffff;
+  background: #000000;
+  /* border-radius: 6px; */
 }
 
 @keyframes blink {
