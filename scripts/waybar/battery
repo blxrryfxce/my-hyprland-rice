@@ -2,7 +2,7 @@
 
 # Automatically find the battery path
 BAT=$(ls /sys/class/power_supply/ | grep -E '^BAT')
-icons=("" "" "" "" "")  # empty → full
+icons=( "" "" "" "" "" )  # empty → full
 
 capacity=$(cat /sys/class/power_supply/$BAT/capacity)
 status=$(cat /sys/class/power_supply/$BAT/status)

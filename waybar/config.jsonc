@@ -20,7 +20,7 @@
   },
 
   "custom/battery": {
-    "interval": 4,
+    "interval": 1,
     "exec": "/home/blurryface/.config/scripts/waybar/battery",
     "icon-theme": "Adwaita"
   },

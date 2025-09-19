@@ -32,7 +32,7 @@ tooltip label {
     border-bottom: 3px solid white;
 }
 
-#mode, #clock, #custom-battery{
+#mode, #clock, #custom-battery, #pulseaudio, #tray{
     padding: 0 20px;
 }
 
