@@ -126,3 +126,4 @@ alias fucking=sudo
 
 export EDITOR=nvim
 export VISUAL=nvim
+export PICO_SDK_PATH="$HOME/pico/pico-sdk"

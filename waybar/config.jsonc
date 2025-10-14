@@ -10,7 +10,9 @@
   },
   
   "tray": {
-    "icon-theme": "Adwaita"
+    "icon-theme": "Adwaita",
+    "icon-size": 21,
+    "expand" : true
   },
 
   "network": {
@@ -21,14 +23,13 @@
 
   "custom/battery": {
     "interval": 1,
-    "exec": "/home/blurryface/.config/scripts/waybar/battery",
-    "icon-theme": "Adwaita"
+    "exec": "~/.config/scripts/waybar/battery"
   },
 
   "pulseaudio": {
-    "format": " {volume}% ",
+    "format": "  {volume}% ",
     "format-muted": "󰝟 ",
-    "icon-theme": "Adwaita"
+    "icon-size" : 21,
   }
 }
 
